@@ -1,0 +1,108 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keka Gourmet | Cardápio Completo</title>
+    <style>
+        body { background-color: white; font-family: 'Segoe UI', sans-serif; color: #333; margin: 0; padding: 0; text-align: center; }
+        .header { padding: 40px 20px; border-bottom: 2px solid #fff5f8; }
+        .logo { max-width: 200px; height: auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        h2 { color: #ff69b4; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 10px; text-transform: uppercase; font-size: 1.5rem; }
+        
+        .grid-cardapio { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+        .item-sabor { 
+            border: 1px solid #f0f0f0; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .item-sabor img { width: 100%; height: 230px; object-fit: cover; display: block; }
+        .item-sabor h3 { color: #ff69b4; margin: 15px 0; font-size: 1.1rem; }
+
+        .contato { background: #fff5f8; padding: 60px 20px; margin-top: 40px; }
+        .btn-whats { 
+            background-color: #25d366; 
+            color: white; 
+            padding: 18px 40px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="img/logo/logo.png" alt="Keka Gourmet" class="logo">
+        <h1>Keka Gourmet</h1>
+        <p>Geladinhos artesanais feitos com amor em Campo Grande!</p>
+    </header>
+
+    <main class="container">
+        <!-- SEÇÃO GOURMET (7 SABORES REAIS DA SUA PASTA) -->
+        <h2>Geladinhos Gourmet Cremosos</h2>
+        <div class="grid-cardapio">
+            <div class="item-sabor">
+                <img src="img/sabores/ninho-com-oreon.jpg" alt="Ninho com Oreo">
+                <h3>Ninho com Oreo</h3>
+            </div>
+            <div class="item-sabor">
+                <img src="img/sabores/brigadeiro.jpg" alt="Brigadeiro">
+                <h3>Brigadeiro</h3>
+            </div>
+            <div class="item-sabor">
+                <img src="img/sabores/pacoca-cremosa.jpg" alt="Paçoca Cremosa">
+                <h3>Paçoca Cremosa</h3>
+            </div>
+            <div class="item-sabor">
+                <img src="img/sabores/sensacao.jpg" alt="Sensação">
+                <h3>Sensação</h3>
+            </div>
+            <div class="item-sabor">
+                <img src="img/sabores/maracuja.jpg" alt="Maracujá">
+                <h3>Maracujá</h3>
+            </div>
+            <div class="item-sabor">
+                <img src="img/sabores/torta-de-limao.jpg" alt="Torta de Limão">
+                <h3>Torta de Limão</h3>
+            </div>
+            <div class="item-sabor">
+                <img src="img/sabores/abacaxi-com-oreon.jpg" alt="Abacaxi com Oreo">
+                <h3>Abacaxi com Oreo</h3>
+            </div>
+        </div>
+
+        <!-- SEÇÃO REFRESCANTE (USANDO A FOTO DE FRUTAS COLORIDAS) -->
+        <h2>Geladinhos Refrescantes</h2>
+        <div class="grid-cardapio">
+            <div class="item-sabor">
+                <!-- Usando o arquivo geadinhos-refrescantes.jpg que está na sua pasta -->
+                <img src="img/sabores/geadinhos-refrescantes.jpg" alt="Geladinho Refrescante">
+                <h3>Geladinho Refrescante</h3>
+            </div>
+        </div>
+    </main>
+
+    <section class="contato">
+        <h2>Faça seu Pedido</h2>
+        <p>📱 WhatsApp: (67) 99171-3343</p>
+        <br>
+        <a href="https://wa.me/5567991713343" class="btn-whats">Pedir no WhatsApp</a>
+    </section>
+
+    <footer style="padding: 30px; font-size: 0.8rem; color: #bbb;">
+        &copy; 2026 Keka Gourmet | Campo Grande, MS
+    </footer>
+
+</body>
+</html>
